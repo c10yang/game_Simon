@@ -22,6 +22,18 @@ $(this).keypress(function(event) {
   }
 });
 
+$(this).on("tap",function(event) {
+  if (gameStart === 0) {
+    gameStart = 1;
+    $("h1").text("Level "+level);
+    nextSequence();
+  } else if (gameStart === 2) {
+    gameStart = 1;
+    $("h1").text("Level "+level);
+    nextSequence();
+  }
+});
+
 // Button Click event listener
 $(".btn").click(function() {
 
