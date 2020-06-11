@@ -11,7 +11,7 @@ var level = 0;
 
 // Start Game when user presses "A"
 $(this).keypress(function(event) {
-  if (gameStart === 0 && event.key.toUpperCase() == "A") {
+  if (gameStart === 0) {
     gameStart = 1;
     $("h1").text("Level "+level);
     nextSequence();
